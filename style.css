@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Pomidorko';
+    src: url('fonts/Pomidorko_2.0_cyr-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Pomidorko', 'Fira Code', monospace;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-content h2 {
+    font-family: 'Pomidorko', 'Fira Code', monospace;
+    color: #764ba2;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.event-details {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #764ba2;
+    margin-top: 1.5rem;
+}
+
+.event-details p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.map-content {
+    flex: 0 0 450px;
+}
+
+.map-content iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-section h2 {
+    font-family: 'Pomidorko', 'Fira Code', monospace;
+    color: #764ba2;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.audio-section h2 {
+    font-family: 'Pomidorko', 'Fira Code', monospace;
+    color: #764ba2;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.audio-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #764ba2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+.audio-item h3 {
+    font-family: 'Pomidorko', 'Fira Code', monospace;
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.audio-item audio {
+    width: 100%;
+    outline: none;
+}
+
+.social-section {
+    padding: 3rem 2.5rem;
+}
+
+.social-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instagram-embed {
+    flex: 0 0 auto;
+    max-width: 540px;
+}
+
+.countdown-widget {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .event-info {
+        flex-direction: column;
+    }
+
+    .map-content {
+        flex: 1;
+        width: 100%;
+    }
+
+    .map-content iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .social-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
